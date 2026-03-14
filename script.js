@@ -1,7 +1,3 @@
-// =============================================
-// TMDB API Integration
-// Get your free API key at: https://www.themoviedb.org/settings/api
-// =============================================
 const TMDB_API_KEY = '1faafd11570b24453ac3441da421c441';
 const TMDB_BASE = 'https://api.themoviedb.org/3';
 const TMDB_IMG = 'https://image.tmdb.org/t/p/w500';
@@ -121,12 +117,9 @@ const moviesData = [
     }
 ];
 
-; // end moviesData
+];
 
-
-// =============================================
 // TMDB API Loaders
-// =============================================
 async function loadTMDBTrending() {
     try {
         const [movies, tv] = await Promise.all([
@@ -236,13 +229,9 @@ const modalBody = document.getElementById('modalBody');
 
 // Initialize
 document.addEventListener('DOMContentLoaded', () => {
-    if (TMDB_API_KEY && TMDB_API_KEY !== 'YOUR_TMDB_API_KEY_HERE') {
-        loadTMDBTrending();
-        loadTMDBUpcoming();
-        loadTMDBOTT();
-    } else {
-        renderMovies();
-    }
+    loadTMDBTrending();
+    loadTMDBUpcoming();
+    loadTMDBOTT();
     setupEventListeners();
 });
 
