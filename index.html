@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="CineBuzz Updates - Your ultimate source for latest movie news, web series updates, OTT releases, Bollywood, Hollywood and South Indian cinema updates">
+    <meta name="keywords" content="movie news, web series, OTT releases, Netflix, Amazon Prime, Bollywood, Hollywood">
+    <title>CineBuzz Updates - Latest Movie & Web Series News</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <div class="nav-wrapper">
+                <div class="logo">
+                    <i class="fas fa-film"></i>
+                    <span>CineBuzz Updates</span>
+                </div>
+                <button class="mobile-toggle" id="mobileToggle">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="#home" class="active">Home</a></li>
+                    <li><a href="#trending">Trending</a></li>
+                    <li><a href="#upcoming">Upcoming</a></li>
+                    <li><a href="#ott">OTT Releases</a></li>
+                    <li><a href="#blog">News</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Top Banner Ad Space -->
+    <div class="ad-banner top-banner">
+        <p>Advertisement Space - 728x90</p>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="container">
+            <h1>Latest Movie & Web Series Updates</h1>
+            <p>Your daily dose of entertainment news</p>
+            
+            <!-- Search Bar -->
+            <div class="search-container">
+                <input type="text" id="searchInput" placeholder="Search movies or series...">
+                <button id="searchBtn"><i class="fas fa-search"></i></button>
+            </div>
+
+            <!-- Category Filter -->
+            <div class="category-filter">
+                <button class="filter-btn active" data-category="all">All</button>
+                <button class="filter-btn" data-category="bollywood">Bollywood</button>
+                <button class="filter-btn" data-category="hollywood">Hollywood</button>
+                <button class="filter-btn" data-category="south">South</button>
+                <button class="filter-btn" data-category="webseries">Web Series</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trending Section -->
+    <section class="section" id="trending">
+        <div class="container">
+            <h2 class="section-title"><i class="fas fa-fire"></i> Trending Now</h2>
+            <div class="movie-grid" id="trendingGrid">
+                <!-- Movie cards will be inserted here -->
+            </div>
+        </div>
+    </section>
+
+    <!-- In-Content Ad Space -->
+    <div class="ad-banner content-banner">
+        <p>Advertisement Space - 970x250</p>
+    </div>
+
+    <!-- Upcoming Releases Section -->
+    <section class="section" id="upcoming">
+        <div class="container">
+            <h2 class="section-title"><i class="fas fa-calendar-alt"></i> Upcoming Releases</h2>
+            <div class="movie-grid" id="upcomingGrid">
+                <!-- Movie cards will be inserted here -->
+            </div>
+        </div>
+    </section>
+
+    <!-- OTT Releases Section -->
+    <section class="section" id="ott">
+        <div class="container">
+            <h2 class="section-title"><i class="fas fa-tv"></i> OTT Platform Releases</h2>
+            <div class="ott-platforms">
+                <button class="ott-btn active" data-platform="all">All</button>
+                <button class="ott-btn" data-platform="netflix">Netflix</button>
+                <button class="ott-btn" data-platform="prime">Prime Video</button>
+                <button class="ott-btn" data-platform="hotstar">Hotstar</button>
+            </div>
+            <div class="movie-grid" id="ottGrid">
+                <!-- Movie cards will be inserted here -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog/News Section -->
+    <section class="section" id="blog">
+        <div class="container">
+            <h2 class="section-title"><i class="fas fa-newspaper"></i> Latest News Articles</h2>
+            <div class="blog-grid">
+                <article class="blog-card">
+                    <img src="https://via.placeholder.com/400x250/1a1a2e/e94560?text=News+1" alt="News">
+                    <div class="blog-content">
+                        <span class="blog-date">May 15, 2024</span>
+                        <h3>Top 10 Most Anticipated Movies of 2024</h3>
+                        <p>Discover the biggest blockbusters coming to theaters this year...</p>
+                        <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+                <article class="blog-card">
+                    <img src="https://via.placeholder.com/400x250/1a1a2e/e94560?text=News+2" alt="News">
+                    <div class="blog-content">
+                        <span class="blog-date">May 14, 2024</span>
+                        <h3>Netflix Announces New Original Series Lineup</h3>
+                        <p>Exciting new web series coming to your favorite streaming platform...</p>
+                        <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+                <article class="blog-card">
+                    <img src="https://via.placeholder.com/400x250/1a1a2e/e94560?text=News+3" alt="News">
+                    <div class="blog-content">
+                        <span class="blog-date">May 13, 2024</span>
+                        <h3>Box Office Report: Weekend Winners</h3>
+                        <p>Check out which movies dominated the box office this weekend...</p>
+                        <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+            </div>
+            <div class="load-more-container">
+                <button class="load-more-btn">Load More Articles</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Ad Space -->
+    <div class="ad-banner footer-banner">
+        <p>Advertisement Space - 728x90</p>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>CineBuzz Updates</h3>
+                    <p>Your ultimate destination for movie and web series news, reviews, and updates.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="#privacy">Privacy Policy</a></li>
+                        <li><a href="#terms">Terms of Service</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Follow Us</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 CineBuzz Updates. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <button class="scroll-top" id="scrollTop">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Movie Detail Modal -->
+    <div class="modal" id="movieModal">
+        <div class="modal-content">
+            <button class="modal-close" id="modalClose">&times;</button>
+            <div class="modal-body" id="modalBody">
+                <!-- Movie details will be inserted here -->
+            </div>
+        </div>
+    </div>
+
+    <script src="config.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
