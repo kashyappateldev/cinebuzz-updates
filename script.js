@@ -117,7 +117,7 @@ const moviesData = [
     }
 ];
 
-];
+
 
 // TMDB API Loaders
 async function loadTMDBTrending() {
