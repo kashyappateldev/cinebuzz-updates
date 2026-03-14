@@ -2,8 +2,7 @@
 // TMDB API Integration
 // Get your free API key at: https://www.themoviedb.org/settings/api
 // =============================================
-// API key loaded from config.js (see config.js file, not uploaded to GitHub)
-// const TMDB_API_KEY is defined in config.js
+const TMDB_API_KEY = '1faafd11570b24453ac3441da421c441';
 const TMDB_BASE = 'https://api.themoviedb.org/3';
 const TMDB_IMG = 'https://image.tmdb.org/t/p/w500';
 
